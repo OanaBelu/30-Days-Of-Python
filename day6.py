@@ -34,5 +34,6 @@ employees = [
     ("Charlie Lee", 50, 15.50),
     ("Bob Smith", 20, 7.00)
 ]
-for i in employees:
-    print(f"{employees[0]} {employees[1]} {employees[2]} {employees[3]}")
+for employee in employees:
+    total_pay = employee[1] * employee[2]
+    print(f'{employee[0]} has earn last week {total_pay}')
