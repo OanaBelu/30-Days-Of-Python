@@ -1,3 +1,4 @@
+
 """The brief
 
 Our application should work as follows:

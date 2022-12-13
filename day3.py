@@ -1,3 +1,4 @@
+
 # Day 3 - Formatting Strings and Processing User Input
 
 # String concatenation -in Python, we can just use the + operator for this (is only supported between strings)
