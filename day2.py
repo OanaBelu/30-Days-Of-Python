@@ -5,6 +5,7 @@
 # We can use single or double quotes, but nor both in the same time
 print("Hello, world!")
 # We can name values in Python using an assignment operation
+
 name = "Oana Belu"
 
 # Variable names can include letters, numbers, and underscore (_) characters
