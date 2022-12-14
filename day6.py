@@ -5,6 +5,11 @@
 # A for loop in Python is a means of performing some set of operations for each item in a collection, or more
 # generally, an iterable.
 
+#
+# for loops
+# The break statement
+# The range function
+
 """Exercises
 
 1) Below we've provided a list of tuples, where each tuple contains details about an employee of a shop: their name,
