@@ -17,7 +17,7 @@
 
 # f-strings are also expressions, so we can assign them to names, or we can print them if we want
 # name = "Oana"
-# age = 28
+# age = 30
 #
 # print(f"{name} is {age * 12} months old!")
 
