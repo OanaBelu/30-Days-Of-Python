@@ -20,7 +20,7 @@ Now that we’ve been through the material for this post, here are a few exercis
     you like with the value of p """
 
 # 1 - Print your age to the console
-print(30)
+print(31)
 
 # 2 - Calculate and print the number of days, weeks, and months in 27 years
 print("In 27 years there are :", 27 * 12, "months")
