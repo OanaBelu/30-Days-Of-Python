@@ -26,4 +26,5 @@ name = name.strip().title()
 hourly_wage = input("Please enter employee's hourly_wage: ")
 weekly_hours = input("Please enter how many hours the employee worked this week: ")
 total_earnings = int(hourly_wage) * int(weekly_hours)
+
 print(f'{name} earned $ {total_earnings} this week.')
