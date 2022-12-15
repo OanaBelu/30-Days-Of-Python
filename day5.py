@@ -50,7 +50,6 @@ numbers = [1, 2, 3, 4]
 new_numbers = numbers + [5]
 
 And this:
-
 numbers = [1, 2, 3, 4]
 numbers.append(5)
 
