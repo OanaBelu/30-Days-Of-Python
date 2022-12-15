@@ -110,7 +110,6 @@ character at a time."""
 #
 #     print(character)
 
-
 """3) Using one of the examples from earlier—or a solution entirely of your own—create a program that prints out every 
 prime number between 1 and 100."""
 
