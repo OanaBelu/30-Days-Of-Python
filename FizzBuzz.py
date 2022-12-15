@@ -14,6 +14,7 @@ In case you're not familiar with the game, it goes like this:
     If you make a mistake, you're usually eliminated from the game, and the game continues until there's only a single
     player remaining.
 """
+
 number = int(input("Please enter a number: "))
 for number in range(0,number+1):
     if number % 3 == 0:
