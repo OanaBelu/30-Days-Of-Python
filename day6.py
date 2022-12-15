@@ -32,6 +32,7 @@ prints out only those who have an hourly wage above the calculated average."""
 # 1) Below we've provided a list of tuples, where each tuple contains details about an employee of a shop: their name,
 # the number of hours worked last week, and their hourly rate. Print how much each employee is due to be paid at the end
 # of the week in a nice, readable format.
+
 employees = [
     ("Rolf Smith", 35, 8.75),
     ("Anne Pun", 30, 12.50),
