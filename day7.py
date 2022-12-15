@@ -1,5 +1,5 @@
 
-# Day 7 - split, join, and Slices
+# Day 7 - Split, join, and Slices
 
 # Converting tuples and lists to strings: the join method
 # We call join on a string, and that string is what we want to place between the items in the collection we want to
@@ -87,6 +87,7 @@ how many how many characters are in the text overall, and you can also provide t
 # 1) Ask the user to enter their given name and surname in response to a single prompt. Use split to extract the names,
 # and then assign each name to a different variable. For this exercise, you can assume that the user has a single given
 # name and a single surname.
+
 name_surname = input("Please enter your name and surname: ").split()
 name = name_surname[0]
 surname = name_surname[1]
