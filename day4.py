@@ -19,6 +19,7 @@
 # names = names + ["Simon"]
 # If we want to add an item in the middle we have the insert method.First we need to tell it where we want to
 # insert the value, and second we need to tell it what we want to insert.
+
 # numbers = [1, 2, 4, 5]
 # numbers.insert(2, 3)
 # print(numbers)  # [1, 2, 3, 4, 5]
