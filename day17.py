@@ -262,7 +262,6 @@ def arg_printer(*args, **kwargs):
     kwargs = [f"{key}={repr(value)}" for key, value in kwargs.items()]
     print(f"Keyword arguments are: {', '.join(kwargs)}")
 
-
 """3) Print the following dictionary using the format method and ** unpacking."""
 
 country = {
