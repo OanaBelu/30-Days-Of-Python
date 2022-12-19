@@ -227,26 +227,33 @@ def show_books(books):
 1) Create a function that accepts any number of numbers as positional arguments and prints the sum of those numbers. 
 Remember that we can use the sum function to add the values in an iterable."""
 
+
 def add(*args):
     print(sum(args))
 
-add(3,0,2,9,11)
+
+add(3, 0, 2, 9, 11)
 
 """2) Create a function that accepts any number of positional and keyword arguments, and that prints them back to the 
 user. Your output should indicate which values were provided as positional arguments, and which were provided as keyword 
  arguments."""
 
-def arg_pos(*args,**kwargs):
+
+def arg_pos(*args, **kwargs):
     print(f"Position arguments are: {args}")
     print(f"Keywords arguments are: {kwargs}")
 
-arg_pos(1,  "blue",  [1,  23,  3], height=184, key=lambda x: x ** 2)
+
+arg_pos(1, "blue", [1, 23, 3], height=184, key=lambda x: x ** 2)
+
 
 def arg_printer(*args, **kwargs):
     args = [str(arg) for arg in args]
     print(f"Positional arguments are: {', '.join(args)}")
 
-arg_printer(1,  "blue",  [1,  23,  3], height=184, key=lambda x: x ** 2)
+
+arg_printer(1, "blue", [1, 23, 3], height=184, key=lambda x: x ** 2)
+
 
 def arg_printer(*args, **kwargs):
     args = [repr(arg) for arg in args]
@@ -272,11 +279,10 @@ Currency: {currency}"""
 
 print(country_template.format(**country))
 
-
 """4) Using * unpacking and range, print the numbers 1 to 20, separated by commas. You will have to provide an argument 
 for print function's sep parameter for this exercise."""
-print(*range(1,21), sep =",")
+print(*range(1, 21), sep=",")
 
 """5) Modify your code from exercise 4 so that each number prints on a different line. You can only use a 
 single print call."""
-print(*range(1,21), sep ="\n")
+print(*range(1, 21), sep="\n")
