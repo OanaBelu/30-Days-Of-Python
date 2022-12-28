@@ -120,3 +120,35 @@ fin = getFibonnaciSeries(7)
 print(list(fin))
 for i in fin:
     print(i)
+
+from collections import namedtuple
+Color = namedtuple("Color", ["red" ,"green","blue"])
+color = Color(55, 155,255)
+white = Color(655, 4155,2455)
+print(white.red)
+
+from collections import namedtuple
+
+# Declaring namedtuple()
+Student = namedtuple('Student', ['name', 'age', 'DOB'])
+
+# Adding values
+S = Student('Nandini', '19', '2541997')
+
+# Access using index
+print("The Student age using index is : ", end="")
+print(S[1])
+
+# Access using name
+print("The Student name using keyname is : ", end="")
+print(S.name)
+
+# using _fields to display all the keynames of namedtuple()
+print("All the fields of students are : ")
+print(S._fields)
+
+# ._replace returns a new namedtuple, it does not modify the original
+print("returns a new namedtuple : ")
+print(S._replace(name='Manjeet'))
+# original namedtuple
+print(S)
