@@ -27,3 +27,13 @@ for number in range(0,number+1):
     else:
         print(number)
 
+# or another solution :
+for number in range(1, 31):
+    if number % 15 == 0:
+        print("Fizz Buzz")
+    elif number % 3 == 0:
+        print("Fizz")
+    elif number % 5 == 0:
+        print("Buzz")
+    else:
+        print(number)
