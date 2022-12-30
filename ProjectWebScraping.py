@@ -45,6 +45,13 @@ def get_rating(tag):
         if term in tag["class"]:
             return rating
 
+rating_mappings = {
+    "One":   "★",
+    "Two":   "★ ★",
+    "Three": "★ ★ ★",
+    "Four":  "★ ★ ★ ★",
+    "Five":  "★ ★ ★ ★ ★"
+}
 
 data = requests.get("http://books.toscrape.com/").content
 soup = BeautifulSoup(data, "html.parser")
@@ -56,7 +63,7 @@ ratings = soup.select(rating_selector)
 
 with open("books.csv", "w", encoding = "utf-8") as book_file:
     for price, title, rating in zip(prices, titles, ratings):
-        print(f"{title['title']} costs {price.string} - {get_rating(rating)}\n")
+        book_file.write(f"{title['title']} , {price.string} , {get_rating(rating)}\n")
 
 
 
