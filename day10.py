@@ -85,7 +85,7 @@ d1.update(b=200, d=400)
 print(d1)  # {'a': 10, 'b': 200, 'c': 30, 'd': 400}
 
 d = {'foo': 100, 'bar': 200, 'baz': 300}
-d['bar':'baz']
+# d['bar':'baz']
 print(d)
 
 
