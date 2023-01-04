@@ -41,6 +41,7 @@ print(f'There are {len(above_average_movies)} movies with budget over average bu
 
 
 # or :
+# ":,"- is part of a special formatting language that built into Python that allows us to format strings in various ways
 
 new_movie_count = int(input("Enter how many new movies you wish to add: "))
 
@@ -62,6 +63,6 @@ for movie in movies:
     if movie[1] > average_budget:
         high_budget_movies.append(movie)
         over_average_cost = movie[1] - average_budget
-        print(f"{movie[0]} cost ${movie[1]}: ${over_average_cost} over average.")
+        print(f"{movie[0]} cost ${movie[1]:,}: ${over_average_cost:,} over average.")
 
 print(f"There were {len(high_budget_movies)} movies with over average budgets.")
