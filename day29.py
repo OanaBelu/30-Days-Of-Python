@@ -1,3 +1,5 @@
+import functools
+
 
 # Day 29: Decorators
 
@@ -253,6 +255,36 @@ make_list(100_000)  # make_list ran in 0.00337s on average
 make_set(100_000)   # make_set ran in 0.00565s on average
 
 # Now our performance tests should see a lot less fluctuation, giving us a better picture of the performance differences
+
+import functools
+
+user = {"username": "Jose", "access_level": "admin"}
+def make_secure(access_level):
+    def decorator(func):
+        @functools.wraps(func)
+        def secure_function(*args, **kwargs):
+            if user["access_level"] == access_level:
+                return func(*args, **kwargs)
+            else:
+                return f"No admin permission for {user['username']} ."
+
+        return secure_function
+
+    return decorator()
+
+@make_secure("admin")
+def get_admin_pass():
+    return "admin: 1234"
+
+@make_secure("user")
+def get_dashboard_pass():
+    return "user: user_password"
+
+# get_admin_pass = make_secure(get_admin_pass)
+
+print(get_admin_pass())
+print(get_dashboard_pass())
+
 
 """Exercises
 Make a decorator which calls a given function twice. You can assume the functions don't return anything important, 
