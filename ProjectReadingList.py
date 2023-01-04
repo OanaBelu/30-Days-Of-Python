@@ -15,7 +15,7 @@ For this project the application needs to have the following functionality:
     loops (day 8).
 """
 
-readind_list = []
+reading_list = []
 menu = """Please choose one of the option:
     - "a" if you want to add a new book
     - "l" if you want to list all the books
@@ -34,10 +34,20 @@ def add_book():
         "author": author,
         "year": year
     }
-    readind_list.append(new_book)
+    reading_list.append(new_book)
 
 def list_books():
-    for book in readind_list:
+    print()
+
+    for book in reading_list:
+        print(f"{book['title']}, by {book['author']} ({book['year']})")
+
+    print()
+
+def show_books():
+    print()
+
+    for book in reading_list:
         print(f"{book['title']}, by {book['author']} ({book['year']})")
 
     print()
@@ -45,14 +55,14 @@ def list_books():
 while selected_option != "q":
     if selected_option == "a":
         add_book()
-        # print("Adding")
     elif selected_option == "l":
-        if readind_list:
+        if reading_list:
             list_books()
         else:
-            print("You should add some books first, because your book list is empty.")
-        # print("List")
+            print("You should add some books first, because your book list is empty.\n")
+    elif selected_option == "s":
+        show_books()
     else:
-        print(f"This {selected_option} is not a valid option . ")
+        print(f"This {selected_option} is not a valid option.\n ")
     selected_option = input(menu).strip().lower()
 
