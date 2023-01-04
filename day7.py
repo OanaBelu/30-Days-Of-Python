@@ -134,7 +134,7 @@ for quote in quotes:
 # If you want to take this a little bit further, you an ask the user for a long piece of text. You can then tell them
 # how many how many characters are in the text overall, and you can also provide them a word count."""
 
-sample_string = input("Please enter a word: ").strip()
+sample_string = input("Please enter a quote: ").strip()
 
 character_count = len(sample_string)
 word_count = len(sample_string.split())
