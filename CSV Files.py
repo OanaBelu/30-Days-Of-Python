@@ -1,6 +1,10 @@
 
 # CSV Files - YouTube Examples
 
+# instead of manually writing and reading, use : csv.writer and csv.reader
+# csv.DictWriter and csv.Dictreader help you with named data
+# the csv module also takes care of formatting edge cases, like commas in your string
+
 """    Explanation from YouTube    """
 
 """
@@ -15,6 +19,7 @@
     There is why we should use the built-in function CSV. Examples 2 and 3 will
     cover the usage of it.
 """
+import csv
 
 movies = [
     {"name": "The Matrix", "director": "Wachowski"},
