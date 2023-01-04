@@ -48,7 +48,8 @@ with open("avocado.csv", "r") as avocado_prices:
     df = pd.read_csv(avocado_prices)
 
 Here the read_csv function is going to parse the data in avocado_prices and turn it into a DataFrame for us. There are
-plenty of other read_ functions available in pandas for working with other formats too. The tutorial talks about this in more depth.
+plenty of other read_ functions available in pandas for working with other formats too. The tutorial talks about this
+in more depth.
 
 Now that we have our data, the next step is going to be trimming off all the fields we don't need. We only have four
 that we want to keep in this case, so we're not going to use drop here.
@@ -236,3 +237,4 @@ lowest_organic = organic.price.min()
 print(f"The lowest price for organic avocados was ${lowest_organic:.2f}")
 
 """
+
