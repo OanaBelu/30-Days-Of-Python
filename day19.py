@@ -84,6 +84,28 @@ try:
 except ValueError:
     print("The grades you entered were in an invalid format.")
 
+# or:
+def get_grades():
+    # Prompt the user for a list of grades
+    grade_string = input('Enter a list of grades separated by commas: ')
+
+    # Split the string into individual grades
+    grades = grade_string.split(',')
+
+    # Use a list comprehension to convert each string to an integer
+    try:
+        grades = [int(grade) for grade in grades]
+    except ValueError:
+        # If a ValueError is raised, inform the user
+        print('Invalid input: please enter a list of integers separated by commas')
+        return []
+
+    # Return the list of grades
+    return grades
+
+grades = get_grades()
+print(grades)
+
 
 """2) Investigate what happens when there is a return statement in both the try clause and finally clause of a try 
 statement."""
